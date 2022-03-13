@@ -1,0 +1,216 @@
+$mobil: 600px;
+$landscape: 768px;
+$laptop: 992px;
+$desctop: 1020px;
+$bigdesctop: 1200px;
+
+$white: white;
+$dark_grey:  #212121;
+$grey: #6b7172;
+$light_grey: #9b9b9b;
+$aqua: #38d1bc;
+
+.flex{
+    display: flex;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.justify-content{
+    justify-content: center;
+}
+
+.align-items{
+    align-items: center;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.fixed{
+    position: fixed;
+}
+
+.space{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.margins{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+}
+
+:root{
+    font-size: 18px;
+    line-height: 1.6em;
+}
+
+html{
+        position: relative;
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+        font-size: 14px;
+        line-height: 1;
+    }
+    
+ body{
+     position: relative;
+       height: 100%;
+       font-family: Arial, Helvetica, sans-serif;
+       margin-left: auto;
+       margin-right: auto;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+.conatiner_head{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url(../images/martaspage.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    color: $white;
+    z-index: -1;
+} 
+
+.container_1{
+  padding-top: 30%;
+  padding-bottom: 30%;
+
+  text-align: center;
+
+  span{
+      color: $aqua;
+  }
+}
+
+button {
+    position: relative;
+    font-family: "Poppins", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    fill: #ffffff;
+    color: #ffffff;
+    background-color: rgba(255,255,255,0.11);
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: rgba(183,183,183,0.42);
+    border-radius: 60px 60px 60px 60px;
+    padding: 15px 20px 15px 20px;
+  }
+
+  .animation:hover{
+    top: -2px;
+	box-shadow: 0px 5px 10px -4px rgba(0, 0, 0, 0.3);
+  }
+
+  .container_work{
+      max-width: 1400px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -80px;
+      padding: 20px;
+      background-color: $light_grey;
+      margin-bottom: 5%;
+      border-radius: 5px;
+      div{
+        font-size: 10em;
+        width:33.333%; 
+        border-radius: 10px;
+        padding: 5px;
+        img{
+            width: 100%;
+            aspect-ratio: auto 1 / 1;
+        }
+      }
+  }
+
+  img {
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+  
+    /* Safari seems to support, but seems deprecated and does the same thing as the others. */
+    image-rendering: -webkit-optimize-contrast;
+  }
+
+.container_about{
+    h2{
+        color: $white;
+    }
+    span{
+        color: $aqua !important;
+    }
+    text-align: center;
+    color: $white;
+    background-color: $dark_grey;
+}
+
+.black_space{
+    h2{
+        color: $white;
+    }
+    span{
+        color: $aqua !important;
+    }
+    text-align: center;
+    color: $light_grey;
+    background-color: $dark_grey;
+    padding-top: 10%;
+}
+
+.slideshow_container{
+    height: 150px;
+}
+
+
+
+footer{
+    background-color: $dark_grey;
+    color: $white;
+    text-align: center;
+}
+
+@media only screen and (max-width: $mobil){
+    .slideshow_container{
+        width: 50%;
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width:$landscape) {
+    .container_work{
+        margin-top: auto !important;
+        div{
+          width:100% !important;   
+        }
+    }
+}
+
+@media only screen and (max-width: $desctop) {
+    .container_work{
+        div{
+          width:50%;   
+        }
+    }
+}
+
