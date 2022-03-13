@@ -1,0 +1,218 @@
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.justify-content {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.align-items {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.space {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.margins {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+}
+
+:root {
+  font-size: 18px;
+  line-height: 1.6em;
+}
+
+html {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-size: 14px;
+  line-height: 1;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.conatiner_head {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/martaspage.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/martaspage.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  z-index: -1;
+}
+
+.container_1 {
+  padding-top: 30%;
+  padding-bottom: 30%;
+  text-align: center;
+}
+
+.container_1 span {
+  color: #38d1bc;
+}
+
+button {
+  position: relative;
+  font-family: "Poppins", Sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  fill: #ffffff;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.11);
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: rgba(183, 183, 183, 0.42);
+  border-radius: 60px 60px 60px 60px;
+  padding: 15px 20px 15px 20px;
+}
+
+.animation:hover {
+  top: -2px;
+  -webkit-box-shadow: 0px 5px 10px -4px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 5px 10px -4px rgba(0, 0, 0, 0.3);
+}
+
+.container_work {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -80px;
+  padding: 20px;
+  background-color: #9b9b9b;
+  margin-bottom: 5%;
+  border-radius: 5px;
+}
+
+.container_work div {
+  font-size: 10em;
+  width: 33.333%;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.container_work div img {
+  width: 100%;
+  aspect-ratio: auto 1 / 1;
+}
+
+img {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-pixelated;
+      image-rendering: pixelated;
+  /* Safari seems to support, but seems deprecated and does the same thing as the others. */
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.container_about {
+  text-align: center;
+  color: white;
+  background-color: #212121;
+}
+
+.container_about h2 {
+  color: white;
+}
+
+.container_about span {
+  color: #38d1bc !important;
+}
+
+.black_space {
+  text-align: center;
+  color: #9b9b9b;
+  background-color: #212121;
+  padding-top: 10%;
+}
+
+.black_space h2 {
+  color: white;
+}
+
+.black_space span {
+  color: #38d1bc !important;
+}
+
+.slideshow_container {
+  height: 150px;
+}
+
+footer {
+  background-color: #212121;
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .slideshow_container {
+    width: 50%;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container_work {
+    margin-top: auto !important;
+  }
+  .container_work div {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .container_work div {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
