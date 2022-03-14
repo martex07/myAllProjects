@@ -123,7 +123,7 @@ button {
 }
 
 .container_work {
-  max-width: 1400px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   margin-top: -80px;
@@ -138,10 +138,17 @@ button {
   width: 33.333%;
   border-radius: 10px;
   padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container_work div img {
   width: 100%;
+  max-width: 370px !important;
   aspect-ratio: auto 1 / 1;
 }
 
